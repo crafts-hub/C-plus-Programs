@@ -42,8 +42,6 @@
 
 
 
-
-
 <h2 align="center">Variables</h2>
 
 ### **Question 1:**
