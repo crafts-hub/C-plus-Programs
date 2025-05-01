@@ -2,8 +2,8 @@
 
 
 ### [Variables](#variables-1)
-- [Question 1](#question-1) 👉 Swap two numbers without a third variable
-- [Question 2](#question-2) 👉 Swap two numbers using a third variable
+- [Question 1](#question-1) 👉 swap two numbers without a third variable
+- [Question 2](#question-2) 👉 swap two numbers using a third variable
 - [Question 3](#question-3) 👉 find absolute value of an input number
 - [Question 4](#question-4) 👉 check if one number is divisible by another
 - [Question 5](#question-5) 👉 check if the input character is a digit or not
