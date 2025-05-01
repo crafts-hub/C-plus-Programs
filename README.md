@@ -4,34 +4,34 @@
 ### [Variables](#variables-1)
 - [Question 1](#question-1) 👉 Swap two numbers without a third variable
 - [Question 2](#question-2) 👉 Swap two numbers using a third variable
-- [Question 3](#question-3) 👉 absolute value of an input number
-- [Question 4](#question-4)
-- [Question 5](#question-5)
-- [Question 6](#question-6)
+- [Question 3](#question-3) 👉 find absolute value of an input number
+- [Question 4](#question-4) 👉 check if one number is divisible by another
+- [Question 5](#question-5) 👉 check if the input character is a digit or not
+- [Question 6](#question-6) 👉 second largest number among three numbers
 
 ### [Loops](#loops-1)
-- [Question 7](#question-7)
-- [Question 8](#question-8)
-- [Question 9](#question-9)
-- [Question 10](#question-10)
-- [Question 11](#question-11)
-- [Question 12](#question-12)
-- [Question 13](#question-13)
-- [Question 14](#question-14)
-- [Question 15](#question-15)
-- [Question 16](#question-16)
+- [Question 7](#question-7) 👉 calculates sum of numbers from start to end
+- [Question 8](#question-8) 👉 calculates sum of all even numbers from 1 to 100
+- [Question 9](#question-9) 👉 calculates sum of all odd numbers from 1 to 100
+- [Question 10](#question-10) 👉 multiplication table of a given number
+- [Question 11](#question-11) 👉 calculates factorial of a given number
+- [Question 12](#question-12) 👉 reverses the given number
+- [Question 13](#question-13) 👉 calculates sum of the digits of a given number
+- [Question 14](#question-14) 👉 check if a given number is a perfect number
+- [Question 15](#question-15) 👉 find all prime numbers up to a given limit
+- [Question 16](#question-16) 👉 check if a given number is an Armstrong number
 
 ### [Nested Loops](#nested-loops-1)
-- [Question 17](#question-17)
-- [Question 18](#question-18)
-- [Question 19](#question-19)
-- [Question 20](#question-20)
+- [Question 17](#question-17) 👉 print a right-angled triangle
+- [Question 18](#question-18) 👉 print a right-angled triangle with right alignment
+- [Question 19](#question-19) 👉 print an inverted right-angled triangle
+- [Question 20](#question-20) 👉 print an inverted right-angled triangle with left alignment
 
 ### [Array](#array-1)
-- [Question 21](#question-21)
-- [Question 22](#question-22)
-- [Question 23](#question-23)
-- [Question 24](#question-24)
+- [Question 21](#question-21) 👉 calculate the sum of all elements in an array
+- [Question 22](#question-22) 👉 find the largest number in an array
+- [Question 23](#question-23) 👉 find the smallest number in an array
+- [Question 24](#question-24) 👉 count even and odd numbers in an array
 
 ---
 
