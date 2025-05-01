@@ -2,9 +2,9 @@
 
 
 ### [Variables](#variables-1)
-- [Question 1](#question-1)
-- [Question 2](#question-2)
-- [Question 3](#question-3)
+- [Question 1](#question-1) 👉 Swap two numbers without a third variable
+- [Question 2](#question-2) 👉 Swap two numbers using a third variable
+- [Question 3](#question-3) 👉 absolute value of an input number
 - [Question 4](#question-4)
 - [Question 5](#question-5)
 - [Question 6](#question-6)
