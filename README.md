@@ -1255,10 +1255,6 @@ Enter number of terms: 5
 
 
 
----
-
-
-
 
 ### **Question 27:**
 
@@ -1340,5 +1336,82 @@ Enter number of terms: 5
 
 
 
+
+
+
+
+
+### **Question 28:**
+
+#### Write a program to print the sum of sequence: 1, 4, 7, 10, ...
+
+
+### **Formula to Find the Sum of A.P.**
+
+If you know:
+
+* **First term (a)**
+* **Common difference (d)**
+* **Number of terms (n)**
+
+Then the **sum of the first `n` terms** is:
+
+$$
+\text{Sum} = \frac{n}{2} \times \left[2a + (n - 1) \times d\right]
+$$
+
+Or:
+
+$$
+\text{Sum} = \frac{n}{2} \times (\text{first term} + \text{last term})
+$$
+
+
+### ✅ **C++ Program to Calculate and Print the Sum of an A.P.**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, d, n;
+
+    cout << "Enter first term (a): ";
+    cin >> a;
+
+    cout << "Enter common difference (d): ";
+    cin >> d;
+
+    cout << "Enter number of terms (n): ";
+    cin >> n;
+
+    int sum = (n * (2 * a + (n - 1) * d)) / 2;
+
+    cout << "The sum of the A.P. is: " << sum << endl;
+
+    return 0;
+}
+```
+
+
+### 🧪 **Example Input:**
+
+```
+a = 1
+d = 3
+n = 5
+```
+
+The A.P. is: `1, 4, 7, 10, 13`
+
+---
+
+### ✅ **Output:**
+
+```
+The sum of the A.P. is: 35
+```
+
+---
 
 
