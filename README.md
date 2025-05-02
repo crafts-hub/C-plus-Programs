@@ -1091,3 +1091,91 @@ Odd numbers count: 3
 
 
 
+
+
+
+
+
+
+
+<h2 align="center">Array</h2>
+
+
+### **Question 25:**
+#### Write a program to print the series: 5 15 45 ...
+
+
+
+
+
+
+---
+
+
+### 🔢 **Identifying the Pattern**
+
+
+```
+5, 15, 45, ...
+```
+
+is a **Geometric Progression (G.P.)**, not an arithmetic progression.
+
+
+Each term is multiplied by **3**:
+
+* 5 × 3 = 15
+* 15 × 3 = 45
+* and so on...
+
+So this is a **geometric sequence** with:
+
+* **First term (a) = 5**
+* **Common ratio (r) = 3**
+
+---
+
+### ✅ **C++ Program to Print First `n` Terms**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5;           // First term
+    int r = 3;           // Common ratio
+    int n;               // Number of terms
+
+    cout << "Enter number of terms: ";
+    cin >> n;
+
+    int term = a;
+
+    for (int i = 0; i < n; i++) {
+        cout << term << " ";
+        term *= r;
+    }
+
+    return 0;
+}
+```
+
+---
+
+### 🧪 Example:
+
+**Input:**
+
+```
+Enter number of terms: 5
+```
+
+**Output:**
+
+```
+5 15 45 135 405
+```
+
+
+
+
