@@ -1102,7 +1102,88 @@ Odd numbers count: 3
 
 
 
-### **Question 25:**
+
+### **Question: 26**
+
+#### Write a program to print the Arithmetic Progression (A.P.): 1 4 7 10 ...
+
+
+
+### **Identifying the Pattern**
+
+```
+1, 4, 7, 10, ...
+```
+
+This is an **Arithmetic Progression (A.P.)**, where:
+
+* **First term (a) = 1**
+* **Common difference (d) = 3**
+
+Each term is formed by **adding 3 to the previous term**:
+
+* 1 + 3 = 4
+* 4 + 3 = 7
+* 7 + 3 = 10
+* and so on...
+
+
+
+### **C++ Program to Print First `n` Terms of A.P.**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int firstTerm = 1;
+    int numberOfTerms;
+    int commonDiff = 3; // as 4-1 = 3
+
+    cout<< "Give number of terms you want to print: "<< endl;
+    cin>> numberOfTerms;
+
+    int currentTerm = firstTerm; // We will print series from first term onwards. 
+
+    for(int i = 1; i <= numberOfTerms; i++) // "i" defines how many times this loop will execute.... in our case it will execute up to "numberOfTerms"
+    {
+        cout << currentTerm << " ";
+        currentTerm = currentTerm + commonDiff; // after each iteration, we will get next term by adding common difference to current term like, "1 + 3 = 4", "4 + 3 = 7", "7 + 3 = 10", and so on...
+    }
+
+    return 0;
+}
+```
+
+
+
+### **Example:**
+
+**Input:**
+
+```
+Give number of terms you want to print:
+5
+```
+
+**Output:**
+
+```
+1 4 7 10 13
+```
+
+
+
+
+
+
+
+
+
+---
+
+### **Question 26:**
 
 #### Write a program to print the series: 5 15 45 ...
 
