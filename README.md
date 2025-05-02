@@ -1101,9 +1101,6 @@ Odd numbers count: 3
 <h2 align="center">Sequences</h2>
 
 
-Here's your corrected `.md` file with **improved grammar, fixed typos, and consistent formatting**, **without changing your code** at all:
-
----
 
 ### **Question 25:**
 
