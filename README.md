@@ -1254,3 +1254,91 @@ Enter number of terms: 5
 
 
 
+
+
+
+
+
+
+### **Question 27:**
+
+#### Write a program to print the Sequence: 1/1, 1/4, 1/7, 1/10, ...
+
+
+### **What is Harmonic Progression (HP)?**
+
+A **Harmonic Progression (H.P.)** is a sequence where the **reciprocals** of the terms form an **Arithmetic Progression (A.P.)**.
+
+
+
+### **Understanding with an Example:**
+
+If the A.P. is:
+
+```
+1, 1.5, 2, 2.5, ...
+```
+
+Then the corresponding **H.P.** becomes:
+
+```
+1/1, 1/1.5, 1/2, 1/2.5 → 1, 0.666..., 0.5, 0.4...
+```
+
+So:
+
+* If A.P. is: `a, a + d, a + 2d, ...`
+* Then H.P. is: `1/a, 1/(a + d), 1/(a + 2d), ...`
+
+
+### **C++ Program to Print First `n` Terms of an H.P.**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 1;         // first term of the underlying A.P.
+    int b = 4;         // second term of the A.P.
+    int d = b - a;     // common difference
+    int n;
+
+    cout << "Enter number of terms: ";
+    cin >> n;
+
+    int currentTerm = a;
+
+    cout << "Harmonic Progression: ";
+    for (int i = 1; i <= n; i++) {
+        cout << "1/" << currentTerm;
+
+        if (i < n) {
+            cout << ", ";
+        }
+
+        currentTerm += d;
+    }
+
+    return 0;
+}
+```
+
+
+### 🧪 **Example Input:**
+
+```
+Enter number of terms: 5
+```
+
+**Output:**
+
+```
+1/1, 1/4, 1/7, 1/10, 1/13
+```
+
+---
+
+
+
+
+
