@@ -1454,7 +1454,7 @@ using namespace std;
 
 int main() {
     int a = 5;           // First term
-    int r = 3;           // Common ratio... as ratio of two consecutive terms is: "15 / 5 = 3", "45 / 15 = 3", and so on...
+    int r = 3;           // Common ratio
     int n;               // Number of terms
 
     cout << "Enter number of terms: ";
