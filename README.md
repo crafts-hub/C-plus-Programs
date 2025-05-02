@@ -33,6 +33,14 @@
 - [Question 23](#question-23) 👉 find the smallest number in an array
 - [Question 24](#question-24) 👉 count even and odd numbers in an array
 
+### [Sequences](#sequences-1)
+- [Question 25](#question-25) 👉 Print AP upto n like: 1, 4, 7, ....
+- [Question 26](#question-26) 👉 Print GP upto nlike: 5, 15, 45, ...
+- [Question 27](#question-27) 👉 fPrint HP upto n like: 1/1, 1/4, 1/7, ...
+- [Question 28](#question-28) 👉 print sum of AP
+- [Question 29](#question-29) 👉 print sum of GP
+
+
 ---
 
 
