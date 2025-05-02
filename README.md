@@ -1367,7 +1367,7 @@ $$
 $$
 
 
-### ✅ **C++ Program to Calculate and Print the Sum of an A.P.**
+### **C++ Program to Calculate and Print the Sum of an A.P.**
 
 ```cpp
 #include <iostream>
@@ -1394,7 +1394,7 @@ int main() {
 ```
 
 
-### 🧪 **Example Input:**
+### **Example Input:**
 
 ```
 a = 1
@@ -1404,12 +1404,95 @@ n = 5
 
 The A.P. is: `1, 4, 7, 10, 13`
 
----
 
-### ✅ **Output:**
+### **Output:**
 
 ```
 The sum of the A.P. is: 35
+```
+
+---
+
+
+
+
+
+
+
+### **Question 29:**
+
+#### Write a program to print the sum of sequence: 5, 15, 45, 135, ...
+
+
+### **Sum of the first `n` terms of a G.P.:**
+
+If you know:
+
+* **First term (a)**
+* **Common ratio (r)**
+* **Number of terms (n)**
+
+Then the sum of the first `n` terms is:
+
+$$
+S_n = \frac{a(1 - r^n)}{1 - r} \quad \text{(for } r \neq 1\text{)}
+$$
+
+For **r = 1**, the sum becomes:
+
+$$
+S_n = a \times n
+$$
+
+---
+
+### **C++ Program to Calculate and Print the Sum of a G.P.**
+
+```cpp
+#include <iostream>
+#include <cmath>  // for power function (pow)
+using namespace std;
+
+int main() {
+    int a = 5;           // First term
+    int r = 3;           // Common ratio... as ratio of two consecutive terms is: "15 / 5 = 3", "45 / 15 = 3", and so on...
+    int n;               // Number of terms
+
+    cout << "Enter number of terms: ";
+    cin >> n;
+
+    // Calculate the sum of the first 'n' terms of the G.P.
+    double sum = 0;
+
+    if (r == 1) {
+        // If r = 1, the sum is just a * n
+        sum = a * n;
+    } else {
+        // Use the sum formula for G.P.
+        sum = a * (1 - pow(r, n)) / (1 - r);
+    }
+
+    // Print the sum
+    cout << "The sum of the G.P. is: " << sum << endl;
+
+    return 0;
+}
+```
+
+---
+
+### **Example Input:**
+
+```
+Enter number of terms: 5
+```
+
+The G.P. is: `5, 15, 45, 135, 405`
+
+### **Output:**
+
+```
+The sum of the G.P. is: 605
 ```
 
 ---
