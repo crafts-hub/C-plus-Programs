@@ -1444,7 +1444,6 @@ $$
 S_n = a \times n
 $$
 
----
 
 ### **C++ Program to Calculate and Print the Sum of a G.P.**
 
@@ -1479,7 +1478,6 @@ int main() {
 }
 ```
 
----
 
 ### **Example Input:**
 
