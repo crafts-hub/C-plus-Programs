@@ -1098,29 +1098,24 @@ Odd numbers count: 3
 
 
 
-<h2 align="center">Array</h2>
+<h2 align="center">Sequences</h2>
 
 
-### **Question 25:**
-#### Write a program to print the series: 5 15 45 ...
-
-
-
-
-
+Here's your corrected `.md` file with **improved grammar, fixed typos, and consistent formatting**, **without changing your code** at all:
 
 ---
 
+### **Question 25:**
 
-### 🔢 **Identifying the Pattern**
+#### Write a program to print the series: 5 15 45 ...
 
+### **Identifying the Pattern**
 
 ```
 5, 15, 45, ...
 ```
 
-is a **Geometric Progression (G.P.)**, not an arithmetic progression.
-
+This is a **Geometric Progression (G.P.)**, not an arithmetic progression.
 
 Each term is multiplied by **3**:
 
@@ -1133,36 +1128,36 @@ So this is a **geometric sequence** with:
 * **First term (a) = 5**
 * **Common ratio (r) = 3**
 
----
 
-### ✅ **C++ Program to Print First `n` Terms**
+### **C++ Program to Print First `n` Terms**
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
+    // this pattern is same as shown in Question 25
+
     int a = 5;           // First term
-    int r = 3;           // Common ratio
+    int r = 3;           // Common ratio... as ratio of two consecutive terms is: "15 / 5 = 3" also "45 / 15 = 3" and so on...
     int n;               // Number of terms
 
     cout << "Enter number of terms: ";
     cin >> n;
 
-    int term = a;
+    int currentTerm = a;
 
     for (int i = 0; i < n; i++) {
-        cout << term << " ";
-        term *= r;
+        cout << currentTerm << " ";
+        currentTerm = currentTerm * r;  // after each iteration, we will get next term by multiplying common ratio to current term like, "5 * 3 = 15", "15 * 3 = 45", "45 * 3 = 135" and so on...
     }
 
     return 0;
 }
 ```
 
----
 
-### 🧪 Example:
+### **Example:**
 
 **Input:**
 
@@ -1175,6 +1170,8 @@ Enter number of terms: 5
 ```
 5 15 45 135 405
 ```
+
+---
 
 
 
