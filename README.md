@@ -1110,6 +1110,35 @@ Odd numbers count: 3
 
 
 
+### **Fomulas for: A.P. vs G.P. vs H.P.**
+
+| **Property**                     | **A.P. (Arithmetic Progression)**                                      | **G.P. (Geometric Progression)**                                       | **H.P. (Harmonic Progression)**                                                          |
+| -------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Definition**                   | Terms increase by a fixed difference                                   | Terms are multiplied by a fixed ratio                                  | Reciprocals of terms form an A.P.                                                        |
+| **General Term (n-th)**          | `Tn = a + (n - 1) × d`                                                 | `Tn = a × r^(n - 1)`                                                   | `Tn = 1 / [a + (n - 1) × d]`                                                             |
+| **Sum of First `n` Terms (Sn)**  | `Sn = n/2 × [2a + (n - 1) × d]`<br>or<br>`Sn = n/2 × (first + last)`   | `Sn = a × (1 - r^n) / (1 - r)` for `r ≠ 1`<br>`Sn = a × n` for `r = 1` | **No standard formula**; sum is calculated by: <br>`Sn = 1/a + 1/(a+d) + 1/(a+2d) + ...` |
+| **First Term (`a`)**             | User-defined                                                           | User-defined                                                           | Reciprocal of the first term of the related A.P.                                         |
+| **Common Difference / Ratio**    | `d = T₂ - T₁`                                                          | `r = T₂ / T₁`                                                          | Difference `d` from related A.P.                                                         |
+| **Nature**                       | Linear                                                                 | Exponential                                                            | Reciprocal-linear                                                                        |
+| **Relation Between A.P. & H.P.** | If A.P. is `a, a+d, a+2d...`, then H.P. is `1/a, 1/(a+d), 1/(a+2d)...` | N/A                                                                    | H.P. is formed by reciprocals of A.P.                                                    |
+| **Graph**                        | Straight line                                                          | Exponential curve                                                      | Hyperbolic curve                                                                         |
+
+---
+
+### **Example Summary:**
+
+| **Type** | **Example Sequence**     | **a** | **d / r**        | **Formula** for Tₙ      | **Sum of 5 terms** |
+| -------- | ------------------------ | ----- | ---------------- | ----------------------- | ------------------ |
+| A.P.     | `1, 4, 7, 10, 13`        | 1     | 3 (diff)         | `1 + (n - 1) × 3`       | `Sn = 35`          |
+| G.P.     | `5, 15, 45, 135, 405`    | 5     | 3 (ratio)        | `5 × 3^(n - 1)`         | `Sn = 605`         |
+| H.P.     | `1/1, 1/4, 1/7, 1/10...` | 1     | 3 (diff of A.P.) | `1 / (1 + (n - 1) × 3)` | `Sn ≈ 1.67692`     |
+
+
+---
+
+
+
+
 
 ### **Question 25:**
 
