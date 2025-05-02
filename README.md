@@ -1103,9 +1103,9 @@ Odd numbers count: 3
 
 
 
-### **Question: 26**
+### **Question 25:**
 
-#### Write a program to print the Arithmetic Progression (A.P.): 1 4 7 10 ...
+#### Write a program to print the Sequence: 1 4 7 10 ...
 
 
 
