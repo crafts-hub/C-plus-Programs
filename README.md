@@ -45,8 +45,8 @@
 
 
 <p align="right">
-  <img src="Source Code/z-Assets/LOGO PNG_02.png" alt="logo" width="16" style="vertical-align: middle; margin-right: 4px;" />
-  <span style="font-size: 2px;">jameel499</span>
+  <img src="Source Code/z-Assets/LOGO PNG_02.png" alt="logo" width="18" style="vertical-align: middle; margin-right: 4px;" />
+  <span style="font-size: 10px; color: gray;">jameel499</span>
 </p>
 
 
