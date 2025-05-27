@@ -733,7 +733,7 @@ int main() {
 
 
 ### **Question 17:**
-#### Write a program to print a right-angled triangle of stars.
+#### Write a program to print a left aligned right-angled triangle of stars.
 
 ### Program
 ```cpp
@@ -749,7 +749,7 @@ int main() {
             cout << "*";
         }
         cout << endl;
-    }
+    } 
     return 0;
 }
 ```
@@ -781,7 +781,7 @@ int main() {
     int n = 5; // Height of the triangle
     for (int i = 1; i <= n; i++) 
     {
-        for (int j = 1; j <= n - i; j++) 
+        for (int j = n; j > i; j--) // for simple left aligned programs, I did "<=" or ">=". But in this one (as it is right aligned), I did ">" for printing spaces first, the reason is: if (n = 5) then I want to put 4 spaces and then one star
         {
             cout << " ";  // Printing spaces for right alignment
         }
@@ -790,7 +790,7 @@ int main() {
             cout << "*";
         }
         cout << endl;
-    }
+    } 
     return 0;
 }
 ```
@@ -811,7 +811,7 @@ int main() {
 ---
 
 ### **Question 19:**
-#### Write a program to print an inverted right-angled triangle of stars.
+#### Write a program to print an inverted left aligned right-angled triangle of stars.
 
 ### Program
 ```cpp
@@ -848,7 +848,7 @@ int main() {
 ---
 
 ### **Question 20:**
-#### Write a program to print an inverted right-angled triangle of stars with left alignment.
+#### Write a program to print an inverted right-angled triangle of stars with right alignment.
 
 ### Program
 ```cpp
@@ -858,13 +858,13 @@ using namespace std;
 int main() {
     int n = 5;
     for (int i = 1; i <= n; i++) 
-    {
-        for (int j = 1; j < i; j++) 
+    { 
+        for (int j = 1; j < i; j++) // As it is right aligned, I did "<" for printing spaces first, as we dont need to print any space for first iteration, so with the condition, it will skip space for 1st iteration
         {
             cout << " "; // Print Spaces first then stars
         }
 
-        for (int j = 1; j <= n - i + 1; j++) 
+        for (int j = n; j >= i ; j--) 
         {
             cout << "*";
         }
