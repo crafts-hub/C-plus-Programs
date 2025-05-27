@@ -1110,3 +1110,434 @@ Odd numbers count: 3
 
 
 
+
+
+<h2 align="center">Sequences</h2>
+
+
+
+
+
+### **Quick Revision: A.P., G.P., and H.P. Formulas**
+
+| **Concept**                 | **Arithmetic Progression (A.P.)**                                                                       | **Geometric Progression (G.P.)**                                                                          | **Harmonic Progression (H.P.)**                                                                       |
+| --------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Definition**              | Difference between terms is constant.                                                                   | Each term is multiplied by a constant ratio.                                                              | Reciprocals of terms form an A.P.                                                                     |
+| **n-th Term**               | $T_n = a + (n - 1) \cdot d$                                                                             | $T_n = a \cdot r^{n - 1}$                                                                                 | $T_n = \frac{1}{a + (n - 1) \cdot d}$                                                                 |
+| **Sum of First n Terms**    | $S_n = \frac{n}{2} \cdot \left[2a + (n - 1) \cdot d\right]$<br>or<br> $S_n = \frac{n}{2} \cdot (a + l)$ | $S_n = \frac{a(1 - r^n)}{1 - r} \quad \text{for } r \neq 1$<br> $S_n = a \cdot n \quad \text{for } r = 1$ | No direct formula. Use:<br> $S_n = \sum_{k=0}^{n-1} \frac{1}{a + kd}$                                 |
+| **First Term (a)**          | Given                                                                                                   | Given                                                                                                     | Reciprocal of the first term of corresponding A.P.                                                    |
+| **Common Difference/Ratio** | $d = T_2 - T_1$                                                                                         | $r = \frac{T_2}{T_1}$                                                                                     | Same common difference **d** from related A.P.                                                        |
+| **Nature**                  | Linear growth                                                                                           | Exponential growth                                                                                        | Hyperbolic decay                                                                                      |
+| **Relation to Others**      | —                                                                                                       | —                                                                                                         | If A.P. is: $a, a+d, a+2d, \ldots$ then H.P. is: $\frac{1}{a}, \frac{1}{a+d}, \frac{1}{a+2d}, \ldots$ |
+
+---
+
+### **Examples Summary**
+
+| **Progression** | **Example**               | **a** | **d / r** | **T₅**               | **Sum of 5 Terms (S₅)**                                                                      |
+| --------------- | ------------------------- | ----- | --------- | -------------------- | -------------------------------------------------------------------------------------------- |
+| A.P.            | 1, 4, 7, 10, 13           | 1     | 3         | $1 + 4 \cdot 3 = 13$ | $S_5 = \frac{5}{2} \cdot [2 + 4 \cdot 3] = 35$                                               |
+| G.P.            | 5, 15, 45, 135, 405       | 5     | 3         | $5 \cdot 3^4 = 405$  | $S_5 = \frac{5(1 - 3^5)}{1 - 3} = 605$                                                       |
+| H.P.            | 1/1, 1/4, 1/7, 1/10, 1/13 | 1     | 3         | $\frac{1}{13}$       | $S_5 = \frac{1}{1} + \frac{1}{4} + \frac{1}{7} + \frac{1}{10} + \frac{1}{13} \approx 1.6769$ |
+
+
+
+---
+
+
+
+
+
+### **Question 25:**
+
+#### Write a program to print the Sequence: 1 4 7 10 ...
+
+
+
+### **Identifying the Pattern**
+
+```
+1, 4, 7, 10, ...
+```
+
+This is an **Arithmetic Progression (A.P.)**, where:
+
+* **First term (a) = 1**
+* **Common difference (d) = 3**
+
+Each term is formed by **adding 3 to the previous term**:
+
+* 1 + 3 = 4
+* 4 + 3 = 7
+* 7 + 3 = 10
+* and so on...
+
+
+
+### **C++ Program to Print First `n` Terms of A.P.**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int firstTerm = 1;
+    int numberOfTerms;
+    int commonDiff = 3; // as 4-1 = 3
+
+    cout<< "Give number of terms you want to print: "<< endl;
+    cin>> numberOfTerms;
+
+    int currentTerm = firstTerm; // We will print series from first term onwards. 
+
+    for(int i = 1; i <= numberOfTerms; i++) // "i" defines how many times this loop will execute.... in our case it will execute up to "numberOfTerms"
+    {
+        cout << currentTerm << " ";
+        currentTerm = currentTerm + commonDiff; // after each iteration, we will get next term by adding common difference to current term like, "1 + 3 = 4", "4 + 3 = 7", "7 + 3 = 10", and so on...
+    }
+
+    return 0;
+}
+```
+
+
+
+### **Example:**
+
+**Input:**
+
+```
+Give number of terms you want to print:
+5
+```
+
+**Output:**
+
+```
+1 4 7 10 13
+```
+
+
+
+
+
+
+
+
+
+---
+
+### **Question 26:**
+
+#### Write a program to print the series: 5 15 45 ...
+
+### **Identifying the Pattern**
+
+```
+5, 15, 45, ...
+```
+
+This is a **Geometric Progression (G.P.)**, not an arithmetic progression.
+
+Each term is multiplied by **3**:
+
+* 5 × 3 = 15
+* 15 × 3 = 45
+* and so on...
+
+So this is a **geometric sequence** with:
+
+* **First term (a) = 5**
+* **Common ratio (r) = 3**
+
+
+### **C++ Program to Print First `n` Terms**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // this pattern is same as shown in Question 25
+
+    int a = 5;           // First term
+    int r = 3;           // Common ratio... as ratio of two consecutive terms is: "15 / 5 = 3" also "45 / 15 = 3" and so on...
+    int n;               // Number of terms
+
+    cout << "Enter number of terms: ";
+    cin >> n;
+
+    int currentTerm = a;
+
+    for (int i = 0; i < n; i++) {
+        cout << currentTerm << " ";
+        currentTerm = currentTerm * r;  // after each iteration, we will get next term by multiplying common ratio to current term like, "5 * 3 = 15", "15 * 3 = 45", "45 * 3 = 135" and so on...
+    }
+
+    return 0;
+}
+```
+
+
+### **Example:**
+
+**Input:**
+
+```
+Enter number of terms: 5
+```
+
+**Output:**
+
+```
+5 15 45 135 405
+```
+
+---
+
+
+
+
+
+
+### **Question 27:**
+
+#### Write a program to print the Sequence: 1/1, 1/4, 1/7, 1/10, ...
+
+
+### **What is Harmonic Progression (HP)?**
+
+A **Harmonic Progression (H.P.)** is a sequence where the **reciprocals** of the terms form an **Arithmetic Progression (A.P.)**.
+
+
+
+### **Understanding with an Example:**
+
+If the A.P. is:
+
+```
+1, 1.5, 2, 2.5, ...
+```
+
+Then the corresponding **H.P.** becomes:
+
+```
+1/1, 1/1.5, 1/2, 1/2.5 → 1, 0.666..., 0.5, 0.4...
+```
+
+So:
+
+* If A.P. is: `a, a + d, a + 2d, ...`
+* Then H.P. is: `1/a, 1/(a + d), 1/(a + 2d), ...`
+
+
+### **C++ Program to Print First `n` Terms of an H.P.**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 1;         // first term of the underlying A.P.
+    int b = 4;         // second term of the A.P.
+    int d = b - a;     // common difference
+    int n;
+
+    cout << "Enter number of terms: ";
+    cin >> n;
+
+    int currentTerm = a;
+
+    cout << "Harmonic Progression: ";
+    for (int i = 1; i <= n; i++) {
+        cout << "1/" << currentTerm;
+
+        if (i < n) {
+            cout << ", ";
+        }
+
+        currentTerm += d;
+    }
+
+    return 0;
+}
+```
+
+
+### 🧪 **Example Input:**
+
+```
+Enter number of terms: 5
+```
+
+**Output:**
+
+```
+1/1, 1/4, 1/7, 1/10, 1/13
+```
+
+---
+
+
+
+
+
+
+
+
+### **Question 28:**
+
+#### Write a program to print the sum of sequence: 1, 4, 7, 10, ...
+
+
+### **Formula to Find the Sum of A.P.**
+
+If you know:
+
+* **First term (a)**
+* **Common difference (d)**
+* **Number of terms (n)**
+
+Then the **sum of the first `n` terms** is:
+
+$$
+\text{Sum} = \frac{n}{2} \times \left[2a + (n - 1) \times d\right]
+$$
+
+Or:
+
+$$
+\text{Sum} = \frac{n}{2} \times (\text{first term} + \text{last term})
+$$
+
+
+### **C++ Program to Calculate and Print the Sum of an A.P.**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, d, n;
+
+    cout << "Enter first term (a): ";
+    cin >> a;
+
+    cout << "Enter common difference (d): ";
+    cin >> d;
+
+    cout << "Enter number of terms (n): ";
+    cin >> n;
+
+    int sum = (n * (2 * a + (n - 1) * d)) / 2;
+
+    cout << "The sum of the A.P. is: " << sum << endl;
+
+    return 0;
+}
+```
+
+
+### **Example Input:**
+
+```
+a = 1
+d = 3
+n = 5
+```
+
+The A.P. is: `1, 4, 7, 10, 13`
+
+
+### **Output:**
+
+```
+The sum of the A.P. is: 35
+```
+
+---
+
+
+
+
+
+
+
+### **Question 29:**
+
+#### Write a program to print the sum of sequence: 5, 15, 45, 135, ...
+
+
+### **Sum of the first `n` terms of a G.P.:**
+
+If you know:
+
+* **First term (a)**
+* **Common ratio (r)**
+* **Number of terms (n)**
+
+Then the sum of the first `n` terms is:
+
+$$
+S_n = \frac{a(1 - r^n)}{1 - r} \quad \text{(for } r \neq 1\text{)}
+$$
+
+For **r = 1**, the sum becomes:
+
+$$
+S_n = a \times n
+$$
+
+
+### **C++ Program to Calculate and Print the Sum of a G.P.**
+
+```cpp
+#include <iostream>
+#include <cmath>  // for power function (pow)
+using namespace std;
+
+int main() {
+    int a = 5;           // First term
+    int r = 3;           // Common ratio
+    int n;               // Number of terms
+
+    cout << "Enter number of terms: ";
+    cin >> n;
+
+    // Calculate the sum of the first 'n' terms of the G.P.
+    double sum = 0;
+
+    if (r == 1) {
+        // If r = 1, the sum is just a * n
+        sum = a * n;
+    } else {
+        // Use the sum formula for G.P.
+        sum = a * (1 - pow(r, n)) / (1 - r);
+    }
+
+    // Print the sum
+    cout << "The sum of the G.P. is: " << sum << endl;
+
+    return 0;
+}
+```
+
+
+### **Example Input:**
+
+```
+Enter number of terms: 5
+```
+
+The G.P. is: `5, 15, 45, 135, 405`
+
+### **Output:**
+
+```
+The sum of the G.P. is: 605
+```
+
+---
+
+
