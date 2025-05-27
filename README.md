@@ -22,10 +22,10 @@
 - [Question 16](#question-16) 👉 check if a given number is an Armstrong number
 
 ### [Nested Loops](#nested-loops-1)
-- [Question 17](#question-17) 👉 print a right-angled triangle
+- [Question 17](#question-17) 👉 print a right-angled triangle with left alignment
 - [Question 18](#question-18) 👉 print a right-angled triangle with right alignment
-- [Question 19](#question-19) 👉 print an inverted right-angled triangle
-- [Question 20](#question-20) 👉 print an inverted right-angled triangle with left alignment
+- [Question 19](#question-19) 👉 print an inverted right-angled triangle with left alignment
+- [Question 20](#question-20) 👉 print an inverted right-angled triangle with right alignment
 
 ### [Array](#array-1)
 - [Question 21](#question-21) 👉 calculate the sum of all elements in an array
