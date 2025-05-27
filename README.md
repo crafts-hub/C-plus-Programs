@@ -33,6 +33,14 @@
 - [Question 23](#question-23)
 - [Question 24](#question-24)
 
+
+<br>
+<p align="right">
+  <img src="Source Code/z-Assets/LOGO PNG_02.png" alt="logo" width="18" style="vertical-align: middle; margin-right: 4px;" />
+  <span style="font-size: 10px; color: gray;">jameel499</span>
+</p>
+
+
 ---
 
 
