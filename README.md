@@ -45,7 +45,7 @@
 
 
 <p align="right">
-  <img src="Source Code/z-Assets/LOGO PNG-02.png" alt="logo" width="22" style="vertical-align: middle; margin-right: 4px;" />
+  <img src="Source Code/z-Assets/LOGO PNG_02.png" alt="logo" width="22" style="vertical-align: middle; margin-right: 4px;" />
   <strong style="horizontal-align: middle;">jameelraza499@</strong>
 </p>
 
