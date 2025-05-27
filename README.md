@@ -1,4 +1,4 @@
-<h2 align="center">Table of Content</h2>
+<h2 align="center">Table of Content (C++)</h2>
 
 
 ### [Variables](#variables-1)
