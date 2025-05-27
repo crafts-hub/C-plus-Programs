@@ -46,7 +46,7 @@
 
 <p align="right">
   <img src="Source Code/z-Assets/LOGO PNG_02.png" alt="logo" width="16" style="vertical-align: middle; margin-right: 4px;" />
-  <span style="font-size: 2px;">jameelraza499@</span>
+  <span style="font-size: 2px;">Jameel499</span>
 </p>
 
 
